@@ -1,0 +1,41 @@
+@-webkit-keyframes fadeInUp { from { opacity: 0;
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px); }
+  to { opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@keyframes fadeInUp { from { opacity: 0;
+    -webkit-transform: translate(0, 50px);
+            transform: translate(0, 50px); }
+  to { opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); } }
+
+@-webkit-keyframes fadeInUp2 { from { opacity: 0;
+    top: 65%; }
+  to { opacity: 1;
+    top: 50%; } }
+
+@keyframes fadeInUp2 { from { opacity: 0;
+    top: 65%; }
+  to { opacity: 1;
+    top: 50%; } }
+
+@-webkit-keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@keyframes fadeIn { from { opacity: 0; }
+  to { opacity: 1; } }
+
+@-webkit-keyframes timelineBg { from { -webkit-transform: translateX(0); transform: translateX(0); }
+  to { -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
+
+@keyframes timelineBg { from { -webkit-transform: translateX(0); transform: translateX(0); }
+  to { -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
+
+@-webkit-keyframes rightLeft { from { -webkit-transform: translateX(0); transform: translateX(0); }
+  to { -webkit-transform: translateX(-50%); transform: translateX(-50%); } }
+
+@keyframes rightLeft { from { -webkit-transform: translateX(0); transform: translateX(0); }
+  to { -webkit-transform: translateX(-50%); transform: translateX(-50%); } }

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="imagetoolbar" content="no" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+   <meta name="format-detection" content="telephone=no" />
+   <script type="text/javascript" defer src="lib/js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" defer src="lib/js/jQueryRotate.js"></script>
+   <script type="text/javascript" defer src="lib/js/common.js"></script>
+   <script type="text/javascript" defer src="lib/js/roulette.js"></script>
+   <link rel="stylesheet" type="text/css" href="lib/css/common.css">
+   <link rel="stylesheet" type="text/css" href="lib/css/roulette.css">
+   <title>풍성한 한가위 행운의 룰렛 이벤트</title>
+</head>
+<body>
+<!-- wrap -->
+<section class="wrap">
+	<h1 class="screen_out">풍성한 한가위 행운의 룰렛 이벤트</h1>
+	<button class="btn_notice" onclick="popOpen('pop01')"><img src="images/roulette/btn_notice.png" alt="이벤트 안내" /></button>
+	<!-- 보상 목록 -->
+	<h2 class="point"><span class="screen_out">사용 가능 티켓</span>99</h2>
+	<h3 class="screen_out">보상 목록</h3>
+	<ul class="pointLst">
+		<li>
+			<span class="screen_out">접속시 티켓 1장</span>
+			<button class="btn"><img src="images/roulette/btn_completion.png" alt="완료" oncontextmenu="return false" /></button> <!-- 완료 -->
+		</li>
+		<li>
+			<span class="screen_out">시즌모드 1회 플레이 티켓 1장</span>
+			<button class="btn"><img src="images/roulette/btn_ticketOn.png" alt="티켓 받기" oncontextmenu="return false" /></button> <!-- 활성화 -->
+		</li>
+		<li>
+			<span class="screen_out">대전 액션 1회 플레이 티켓 1장</span>
+			<button class="btn"><img src="images/roulette/btn_ticketOff.png" alt="미달성" oncontextmenu="return false" /></button> <!-- 미달성 -->
+		</li>
+		<li>
+			<span class="screen_out">대전 하이라이트 1회 플레이 티켓 1장</span>
+			<button class="btn"><img src="images/roulette/btn_ticketOff.png" alt="미달성" oncontextmenu="return false" /></button> <!-- 미달성 -->
+		</li>
+	</ul>
+	<!--// 보상 목록 -->
+	<!-- 룰렛 -->
+	<article class="rulletWrap">
+		<div class="rullet">
+			<img src="images/roulette/rullet.png" />
+		</div>
+		<span class="pin"><img src="images/roulette/point.png" /></span>
+		<p class="button">
+			<img src="images/roulette/btn_startOn.png" alt="시작" class="btn_startOn" /> <!-- 활성화 -->
+			<!-- <img src="images/roulette/btn_startOff.png" alt="시작" class="btn_startOff" /> <!-- 비활성화 -->
+			<!-- <img src="images/roulette/btn_oneMore.png" alt="시작" class="btn_oneMore" /> <!-- 한번 더 -->
+		</p>
+	</article>
+	<!--// 룰렛 -->
+	<div class="bg"><img src="images/roulette/bg.png" alt="" oncontextmenu="return false" /></div>
+</section>
+<!--// wrap -->
+<!-- popup(이벤트 안내) -->
+<aside class="popup noticePop">
+	<h5 class="screen_out">이벤트 안내</h5>
+	<section class="popCon pop01">
+		<p><img src="images/roulette/popup.png" alt="" /></p>
+		<ul class="popBtns">
+			<li class="btn_popTopClose" onclick="popClose('pop01')"><img src="images/roulette/btn_popTopClose.png" alt="닫기" /></li>
+			<li class="btn_popBtmClose" onclick="popClose('pop01')"><img src="images/roulette/btn_popBtmClose.png" alt="닫기" /></li>
+		</ul>
+	</section>
+	<span class="screen">&nbsp;</span>
+</aside>
+<!--// popup(이벤트 안내) -->
+<!-- popup(보상 획득) -->
+<aside class="popup">
+	<section class="popCon pop02">
+		<h5><img src="images/roulette/giftPopTit.png" alt="보상 획득" /></h5>
+		<p class="giftImg"><img src="images/roulette/giftPop1.png" alt="" /></p>
+		<button class="btn_close" onclick="popClose('pop02')"><img src="images/roulette/btn_close.png" alt="닫기" /></button>
+	</section>
+	<span class="screen">&nbsp;</span>
+</aside>
+<!--// popup(보상 획득) -->
+</body>
+</html>

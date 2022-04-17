@@ -1,0 +1,30 @@
+.btn_notice{position:absolute;top:9.3%;right:4.8%;width:15%;height:auto}
+.btn_notice img{width:100%;height:auto}
+
+.point{position:absolute;top:43.8%;left:4.7%;width:9.3%;font-family:'NanumSquareB';font-size:5.6vw;;line-height:1.0em;color:#fff;text-align:right}
+
+.pointLst{position:absolute;width:28%;top:24.6%;left:20.4%}
+.pointLst:after{display:block;content:"";clear:both}
+.pointLst li{float:left;width:49%;margin-bottom:6.3%;padding-top:40.2%}
+.pointLst li:nth-child(odd){margin-right: 2%;}
+.pointLst li button{width:82%;height:auto;margin:0 auto}
+.pointLst li img{display:block;width:100%;height:auto}
+
+.rulletWrap{position:relative;position:absolute;right:calc(5.4% - 10px);top:calc(17.2% + 10px);width:44.2%}
+.rulletWrap .rullet{}
+.rulletWrap .rullet img{width:100%;height:100%}
+.rulletWrap .pin{position:absolute;left:50%;top:-5.5%;width:13%;transform:translateX(-50%);z-index:10}
+.rulletWrap .pin img{width:100%;height:auto}
+.rulletWrap .button{position:absolute;left:50%;top:50%;width:21%;height:21%;border-radius:150px;transform:translate(-50%,-50%)}
+.rulletWrap .button img{width:100%;height:auto}
+
+.bg{}
+.bg img{width:100%;height:auto}
+
+/* popup */
+.noticePop .popCon{top:10%;width:80%;}
+.noticePop .popCon .popBtns .btn_popTopClose{width:3%;top:3%;right:3%}
+.noticePop .popCon .popBtns .btn_popBtmClose{bottom:7%}
+
+.popup .pop02{top:15%;width:30%;padding:3% 0 2%;border:10px solid #f09f01;box-sizing:border-box;border-radius:20px;background:#fff8de}
+.popup .pop02 .btn_close{width:40%;margin:0 auto}

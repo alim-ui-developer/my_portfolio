@@ -1,0 +1,56 @@
+@font-face{
+	font-family:'GongGothicL';
+	src:url('GongGothic_Light.eot');
+	src:url("../font/GongGothic_Light.eot?#iefix") format('embedded-opentype'),
+        url("../font/GongGothic_Light.woff") format("woff"),
+        url("../font/GongGothic_Light.woff2") format("woff2"),
+        url("../font/GongGothic_Light.ttf") format('truetype');
+	font-weight:normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:'GongGothicM';
+	src:url('GongGothic_Medium.eot');
+	src:url("../font/GongGothic_Medium.eot?#iefix") format('embedded-opentype'),
+        url("../font/GongGothic_Medium.woff") format("woff"),
+        url("../font/GongGothic_Medium.woff2") format("woff2"),
+        url("../font/GongGothic_Medium.ttf") format('truetype');
+	font-weight:normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:'GongGothicB';
+	src:url('GongGothic_Bold.eot');
+	src:url("../font/GongGothic_Bold.eot?#iefix") format('embedded-opentype'),
+        url("../font/GongGothic_Bold.woff") format("woff"),
+        url("../font/GongGothic_Bold.woff2") format("woff2"),
+        url("../font/GongGothic_Bold.ttf") format('truetype');
+	font-weight:normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:'NotoSansDL';
+	src:url('NotoSansCJKkr-DemiLight.eot');
+	src:url("../font/NotoSansCJKkr-DemiLight.eot?#iefix") format('embedded-opentype'),
+        url("../font/NotoSansCJKkr-DemiLight.woff") format("woff"),
+        url("../font/NotoSansCJKkr-DemiLight.woff2") format("woff2"),
+        url("../font/NotoSansCJKkr-DemiLight.ttf") format('truetype'),
+        url('../font/NotoSansCJKkr-DemiLight.svg#NanumSquareR') format('svg');
+	font-weight:normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family:'NotoSansB';
+	src:url('NotoSansCJKkr-Bold.eot');
+	src:url("../font/NotoSansCJKkr-Bold.eot?#iefix") format('embedded-opentype'),
+        url("../font/NotoSansCJKkr-Bold.woff") format("woff"),
+        url("../font/NotoSansCJKkr-Bold.woff2") format("woff2"),
+        url("../font/NotoSansCJKkr-Bold.ttf") format('truetype'),
+        url('../font/NotoSansCJKkr-Bold.svg#NanumSquareB') format('svg');
+	font-weight:normal;
+	font-style: normal;
+}

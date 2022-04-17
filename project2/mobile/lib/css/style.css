@@ -1,0 +1,638 @@
+/* 태블릿PC */
+/***** header *****/
+header{position:fixed;width:100%;z-index:20}
+header .top{position:fixed;left:0;top:0;width:100%;height:40px;background:rgba(0,0,0,0.7)}
+header .top .logo{float:left;margin:9px 0 0 12px}
+header .top .logo img{width:auto;height:22px}
+header .top .btn_menu{float:right;margin:2px 2px 0 0;padding:10px 4px}
+header .top .btn_menu img{width:auto;height:16px}
+header .top .btn_share{float:right;margin:2px 4px 0 0;padding:9px 4px}
+header .top .btn_share img{width:auto;height:18px}
+header nav{display:none;position:fixed;top:0;left:0;width:100%;height:100%;z-index:20}
+header nav .navi{position:absolute;top:0;right:-75%;width:72%;max-width:385px;height:100%;background:#fff}
+header nav .navi li{}
+header nav .navi li a{display:block;width:100%;height:100%}
+header nav .navi li img{width:100%;height:auto}
+header nav .navi li.btn_gongTV{width:80%;margin:15px auto 0}
+header nav .navi li.btn_cafe{width:80%;margin:12px auto 0}
+header nav .btn_close{position:absolute;top:10px;right:400px;width:26px;height:26px}
+header nav .btn_close img{width:100%;height:100%}
+header nav .screen{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:-1}
+
+/***** visual *****/
+.visual{position:relative;width:100%;background:url("../../images/bg/bg_visual.jpg") 50% no-repeat;background-size:cover}
+.visual img{width:100%;height:auto}
+.visual .screen{position:fixed;left:0;bottom:0;min-width:100%;min-height:100%;background:rgba(0,0,0,0.6)}
+.visual .badge{position:absolute;top:55px;left:12px;width:22%;max-width:120px;z-index:6}
+.visual .contents{position:absolute;top:50%;width:100%;transform:translateY(-50%);z-index:10}
+.visual h2{width:48%;max-width:187px;margin:0 auto 10px}
+.visual h3{position:absolute;top:5px;left:50%;width:86%;max-width:465px;transform:translateX(-50%);text-align:left}
+.visual h3 img{width:116px;height:auto}
+.visual p{width:88%;max-width:484px;margin:0 auto}
+.visual .btn_video{width:34%;max-width:124px;margin:70px auto}
+.visual .step{position:relative;width:85%;max-width:460px;margin:0 auto}
+.visual .step:before{position:absolute;top:20px;left:0;width:100%;display:block;content:"";border-bottom:1px solid #c20813;z-index:-1}
+.visual .step li{float:left;width:14.5%;margin-left:28.25%}
+.visual .step li:first-child{margin:0}
+.visual .video{position:fixed;left:0;bottom:0;width:100%;min-width:100%;min-height:100%;object-fit:cover}
+.visual .video::-webkit-media-controls{display:none !important}
+.visual .btn_link{background-image:url("../../images/btn/btn_registrationLinkTxt.png")}
+.visual .btn_download{background-image:url("../../images/btn/btn_downloadTxt.png")}
+.visual .storeLink{margin-top:30px;text-align:Center}
+.visual .storeLink li{display:inline-block;width:auto;height:56px;margin:0 0 0 2%}
+.visual .storeLink li:nth-child(1){margin:0}
+.visual .storeLink li img{width:auto;height:100%}
+
+.visual .vdoBtns{position:absolute;bottom:15px;left:15px;z-index:5}
+.visual .vdoBtns .imgBtn{float:left;display:inline-block;width:16px;height:16px;margin-right:8px}
+
+/****** 이사만루3 사전 등록 *****/
+.registration{position:relative;padding:85px 0;text-align:center;background:url("../../images/bg/bg_registration.jpg") 50% no-repeat;background-size:cover}
+.registration img{width:100%;height:auto}
+.registration h3{display:inline-block;width:80%;max-width:432px;margin:0 0 5px -150px;opacity:0}
+.registration p{width:60%;max-width:318px;margin:0 auto 15px;opacity:0}
+.registration .period{margin:0 auto 20px;opacity:0}
+.registration article{width:85%;max-width:460px;margin:0 auto;padding:15px 0;background:#dee1e8;opacity:0}
+.registration article h4{width:88%;max-width:320px;margin:16px auto 10px}
+.registration article p{width:80%;max-width:300px;margin-bottom:0;opacity:1}
+.registration .btn_big{background-image:url("../../images/btn/btn_registrationTxt.png")}
+.registration .ball{position:absolute;bottom:-1%;left:-2%;width:130px;opacity:0}
+.registration .player{position:absolute;bottom:0%;right:-100px;width:300px;height:auto;opacity:0}
+
+
+/****** 스토어별 사전 등록 *****/
+.store{position:relative;padding:85px 0;text-align:center;background:url("../../images/bg/bg_store.jpg") 50% no-repeat;background-size:cover}
+.store img{width:100%;height:auto}
+.store h3{display:inline-block;width:82%;max-width:444px;margin:0 0 6px -150px;opacity:0}
+.store p:not(.period){width:auto;;height:18px;margin:0 auto;opacity:0}
+.store p:not(.period) img{width:auto;height:100%}
+.store .period{margin:10px auto 25px;opacity:0}
+.store .storeGift{display:inline-block}
+.store .storeGift > div{float:left;width:153px;margin:0 auto;padding:0 0 29px 0;background:url("../../images/store/bg_storeGift.png") 50% 100% no-repeat;background-size:100% auto;opacity:0}
+.store .storeGift p{width:100%;height:auto;opacity:1}
+.store .storeGift p img{width:100%;height:auto}
+.store .storeGift a{display:block;width:72%;height:auto;margin:0 auto}
+.store .storeLink{margin:10px 0  0 0}
+.store .storeLink div{text-align:center;opacity:0}
+.store .storeLink div img{width:84%;max-width:460px}
+.store .storeLink ul{text-align:Center}
+.store .storeLink ul li{display:inline-block;position:relative;width:auto;height:33px;margin:0 0 0 2%;bottom:-15px;opacity:0}
+.store .storeLink ul li:nth-child(1){margin:0}
+.store .storeLink ul li img{width:auto;height:100%}
+
+/***** 게임 소개 *****/
+.game{position:relative;padding:85px 0 45px;text-align:center;background:url("../../images/bg/bg_game.jpg") 50% no-repeat;background-size:cover}
+.game img{width:100%;height:auto}
+.game h3{display:inline-block;width:52%;max-width:310px;margin:0 0 25px -150px;opacity:0}
+.game section{width:90%;max-width:800px;margin:0 auto}
+.game section > article{position:relative;float:left;width:calc(25% - 10px);margin:0 10px 10px 0;cursor:pointer;opacity:0}
+.game section > article img{width:100%;height:auto}
+.game section > article div{position:absolute;width:calc(100% - 20px);left:10px;top:20px;}
+.game section > article h4{margin-bottom:3px;font-size:15px;line-height:17px;font-weight:800;color:#fff}
+.game section > article p{font-size:11px;line-height:13px;font-weight:800;color:#e7232e}
+.game ul{width:59%;max-width:320px;margin-left:7.5%}
+.game ul li{float:left;width:calc(50% - 10px);margin:0 10px 10px 0}
+.game ul li img{width:100%;height:auto}
+.game .memo{display:inline-block;width:85%;max-width:460px;height:30px;margin:5px 0 0 -150px;font-size:12px;line-height:30px;font-weight:800;color:#fff;background:url("../../images/mediaClip/mobileBtnArr.png") calc(100% - 10px) 50% #c20813 no-repeat;background-size:auto 16px;opacity:0}
+.game .memo a{color:#fff}
+
+/***** 미디어 클립 *****/
+.mediaClip{position:relative;padding:40px 0 50px;text-align:center;background:url("../../images/bg/bg_mediaClip.jpg") 50% no-repeat;background-size:cover}
+.mediaClip img{width:100%;height:auto}
+.mediaClip h2{display:inline-block;width:41.8%;max-width:226px;margin:0 0 10px -150px;opacity:0}
+.mediaClip p{margin-bottom:16px;opacity:0}
+.mediaClip p > img{width:52%;max-width:186px}
+.mediaClip p > a{display:block;width:30%;max-width:165px;margin:0 auto}
+.mediaClip p > a img{width:100%;height:auto}
+.mediaClip ul{width:85%;max-width:460px;margin:0 auto}
+.mediaClip ul li{position:relative;margin-bottom:5px;opacity:0}
+.mediaClip ul li:nth-child(even){float:right}
+.mediaClip ul li:nth-child(odd){float:left}
+.mediaClip ul li:nth-child(1){width:54.3%}
+.mediaClip ul li:nth-child(2){width:44%}
+.mediaClip ul li:nth-child(3){width:44%}
+.mediaClip ul li:nth-child(4){width:54.3%}
+.mediaClip ul li:before{display:block;position:absolute;top:0;left:0;content:"";width:100%;height:100%;background:rgba(0,0,0,0.3)}
+.mediaClip ul li:after{position:absolute;top:50%;left:50%;display:block;content:"";width:32px;height:32px;background:url("../../images/mediaClip/ico_video.png") 0 0 no-repeat;background-size:100% auto;transform:translate(-50%,-50%)}
+.mediaClip ul li.off:before{display:none}
+.mediaClip ul li.off:after{display:none}
+.mediaClip ul li img{width:100%;height:auto}
+
+
+/***** 구단명 선점 이벤트 *****/
+.event01{position:relative;padding:85px 0 50px;text-align:center;background:url("../../images/bg/bg_event01.jpg") 0 0 #eff5fe no-repeat;background-size:100% auto}
+.event01 img{width:100%;height:auto}
+.event01 h3{display:inline-block;width:80%;max-width:433px;margin:0 0 0 -150px;opacity:0}
+.event01 > p{width:74%;max-width:398px;margin:10px auto 0;opacity:0}
+.event01 .period{margin:15px auto 0}
+
+.event01 .before{position:relative;width:85%;max-width:460px;margin:15px auto 0;padding:0 0 25px 0;opacity:0}
+.event01 .before p{opacity:1}
+.event01 .before .formBox{background:#fff;padding:30px 0}
+.event01 .before .formBox form .btn_nickname{background-image:url("../../images/btn/btn_nicknameTxt.png")}
+.event01 .before .formBox form select{border:1px solid #d7d9df;box-sizing:border-box}
+.event01 .before .formBox form input[type='number'],.event01 .before .formBox form input[type='tel']{border:1px solid #d7d9df;box-sizing:border-box}
+.event01 .before .formBox form .codeBox input{margin-right:-1px}
+.event01 .before .formBox form .codeBox .btn_code{margin-left:-1px}
+.event01 .before .teamGift{width:100%}
+
+.event01 .after{opacity:0}
+.event01 .after p{opacity:1}
+.event01 .after .gift{width:35%;max-width:178px;margin:16px auto}
+.event01 .after .gift p{text-align:center;background:rgba(182,187,196,0.4)}
+.event01 .after .gift h5{width:100%;height:;font-size:12px;line-height:16px;font-weight:800;padding:8px 0 18px;background:url("../../images/event01/giftBg.png") 50% 100% no-repeat;background-size:100% auto}
+.event01 .after .formBox{width:85%;max-width:460px;margin:0 auto;padding:20px 0;background:#fff}
+.event01 .after .formBox p{width:82%;max-width:360px;height:32px;margin:5px auto;border:1px solid #b7b7b7;box-sizing:border-box}
+.event01 .after .formBox label{display:block;float:left;padding:8px 0 0 10px}
+.event01 .after .formBox label img{width:auto;height:14px}
+.event01 .after .formBox input[type="text"]{width:calc(100% - 70px);padding:0 5px}
+.event01 .after .formBox select{width:calc(100% - 90px);height:30px;border:none}
+.event01 .after .btn_enter{width:82%;margin-top:10px;background-image:url("../../images/btn/btn_enterTxt.png")}
+.event01 .after .noticeBox{width:85%;max-width:460px;margin:0 auto;background:#d3d9e4}
+.event01 .after .noticeBox ul li{color:#3f464e}
+
+
+/***** 접속 유도 이벤트 *****/
+.event02{position:relative;text-align:center;background:url("../../images/bg/bg_event02.jpg") 0 0 #500000 no-repeat;background-size:100% auto}
+.event02 img{width:100%;height:auto}
+.event02 h3{display:inline-block;width:82%;max-width:448px;margin:0 0 10px -150px;padding-top:80px;opacity:0}
+.event02 .subTxt{width:64%;max-width:348px;margin:0 auto;opacity:0}
+.event02 .period{margin:15px auto 20px;opacity:0}
+.event02 .btn_loginEnter{background-image:url("../../images/btn/btn_loginAndEnterTxt.png")}
+.event02 .noticeBox{margin:30px 0 0 0;background:#690c0b}
+.event02 .noticeBox ul li{color:#ffb7b7}
+
+.event02 .event02_01Box{width:85%;max-width:460px;margin:0 auto;padding:20px 0 0 0;background:#300000;opacity:0}
+.event02 .event02_01Box > div p{width:66%;max-width:356px;margin:0 auto 22px}
+.event02 .event02_01Box > div .mission1{width:86%;margin:0 auto}
+.event02 .event02_01Box > div .mission1 li{float:left;width:calc(33.3% - 10px);margin:0 5px 20px}
+.event02 .event02_01Box > div .mission2{width:57%;margin:0 auto 23px}
+.event02 .event02_01Box > div .mission2 li{float:left;width:calc(50% - 10px);margin:0 5px 0}
+
+.event02 .event02_01Box .after > div{width:82%;max-width:360px;margin:0 auto}
+.event02 .event02_01Box .after .btn_check{float:left;width:48%;margin:0 4% 0 0;background-image:url("../../images/btn/btn_checkTxt.png")}
+.event02 .event02_01Box .after .btn_check.off{background-color:#323232}
+.event02 .event02_01Box .after .btn_attendanceCheck{float:left;width:48%;;background-image:url("../../images/btn/btn_attendanceCheckTxt.png")}
+
+.event02 .event02_01Box .after table{width:82%;max-width:360px;border:1px solid #910009;margin:20px auto 0}
+.event02 .event02_01Box .after table th{height:30px;background:#910009;text-align:center}
+.event02 .event02_01Box .after table th:first-child{border-right:2px solid #550101}
+.event02 .event02_01Box .after table th img{width:auto;height:16px;}
+.event02 .event02_01Box .after table td{height:34px;font-size:20px;line-height:30px;font-weight:800;color:#fff42d}
+.event02 .event02_01Box .after table td:first-child{border-right:2px solid #910009}
+
+.event02 .event02_02Box{width:100%;margin:26px 0 0 0;padding:20px 7.5%;box-sizing:border-box;background:#300000;opacity:0}
+.event02 .event02_02Box > p{width:70%;max-width:375px;margin:0 auto}
+.event02 .event02_02Box > div.clear{width:85%;max-width:360px;margin:20px auto 0}
+.event02 .event02_02Box > div .left{position:relative;float:left;width:120px;height:auto;padding-bottom:22px;background:url("../../images/event02/cardBtm.png") 50% 100% no-repeat;background-size:100% auto}
+.event02 .event02_02Box > div .left img{width:66px;height:auto}
+.event02 .event02_02Box > div .right{float:right;width:200px}
+.event02 .event02_02Box > div .right .count{width:100%;border:1px solid #910009;box-sizing:border-box}
+.event02 .event02_02Box > div .right .count h5{padding:5px 0;text-align:center;background:#910009}
+.event02 .event02_02Box > div .right .count h5 img{width:auto;height:14px}
+.event02 .event02_02Box > div .right .count p{font-size:20px;line-height:22px;padding:5px 0;font-weight:800;color:#fff42d}
+.event02 .event02_02Box > div .right .btn_draft{width:100%;height:40px;margin:10px 0 0 0;text-indent:-9999px;background-image:url("../../images/btn/btn_draftTxt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 14px}
+.event02 .event02_02Box .noticeBox{max-width:460px;margin:20px auto 0}
+.event02 .event02_02Box .noticeBox h5{margin-bottom:10px}
+.event02 .event02_02Box .noticeBox ul li{margin:5px 0}
+.event02 .event02_02Box .noticeBox ul li:before{content:"";width:14px;height:14px;margin:0 3px 0 0}
+.event02 .event02_02Box .noticeBox ul li:nth-child(1):before{background:url("../../images/event02/num1.png") 0 50% no-repeat;background-size:100% auto}
+.event02 .event02_02Box .noticeBox ul li:nth-child(2):before{background:url("../../images/event02/num2.png") 0 50% no-repeat;background-size:100% auto}
+.event02 .event02_02Box .noticeBox ul li:nth-child(3):before{background:url("../../images/event02/num3.png") 0 50% no-repeat;background-size:100% auto}
+.event02 .event02_02Box .noticeBox ul li:nth-child(4):before{background:url("../../images/event02/num4.png") 0 50% no-repeat;background-size:100% auto}
+.event02 .event02_02Box .noticeBox ul li:nth-child(5):before{background:url("../../images/event02/num5.png") 0 50% no-repeat;background-size:100% auto}
+
+.event02 .event02_03Box{width:85%;max-width:460px;margin:0 auto;padding:20px 0;box-sizing:border-box;opacity:0}
+.event02 .event02_03Box h4{width:42%;max-width:190px;margin:0 auto 10px}
+.event02 .event02_03Box .point{width:100%;height:32px;margin-bottom:15px;text-align:center}
+.event02 .event02_03Box .point h5{float:left;width:62%;height:100%;background:#910009}
+.event02 .event02_03Box .point h5 img{width:auto;height:16px;margin:7px 0 0 0}
+.event02 .event02_03Box .point p{float:left;width:38%;height:100%;border-width:1px 1px 1px 0;border-style:solid;border-color:#910009;box-sizing:border-box;font-size:20px;line-height:28px;font-weight:800;color:#fff42d;background:#2a0000}
+.event02 .event02_03Box .cardLst{position:relative}
+.event02 .event02_03Box .cardLst ul{width:calc(100% + 6px);margin-left:-3px}
+.event02 .event02_03Box .cardLst ul li{float:left;width:calc(14.2% - 6px);height:100%;margin:3px}
+.event02 .event02_03Box .cardLst ul li img{width:100%;height:auto}
+.event02 .event02_03Box .cardLst .cover{position:relative;position:absolute;top:-3px;left:-3px;width:calc(100% + 3px);height:calc(100% + 3px);background:rgba(52,1,1,0.98);}
+.event02 .event02_03Box .cardLst .cover .btn_login2{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:65%;max-width:200px;height:40px;text-indent:-9999px;background-image:url("../../images/btn/btn_login2Txt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 14px;}
+.event02 .event02_03Box .cardLst .empty{height:140px;background:#340101}
+.event02 .event02_03Box .cardLst .empty p:first-child{width:62%;max-width:282px;padding-top:25px}
+.event02 .event02_03Box .cardLst .empty p:first-child img{width:100%;height:auto}
+.event02 .event02_03Box .cardLst .empty .btn_draft2{width:65%;max-width:240px;height:40px;margin:12px auto 0;text-indent:-9999px;background-image:url("../../images/btn/btn_draftLinkTxt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 14px}
+
+.event02 .event02_04Box{width:100%;padding:20px 7.5%;box-sizing:border-box;background:#300000;opacity:0}
+.event02 .event02_04Box h4{width:42%;max-width:190px;margin:0 auto 10px}
+.event02 .event02_04Box .point{width:100%;max-width:460px;height:32px;margin:0 auto 15px;text-align:center}
+.event02 .event02_04Box .point h5{float:left;width:62%;height:100%;background:#910009}
+.event02 .event02_04Box .point h5 img{width:auto;height:16px;margin:7px 0 0 0}
+.event02 .event02_04Box .point p{float:left;width:38%;height:100%;border-width:1px 1px 1px 0;border-style:solid;border-color:#910009;box-sizing:border-box;font-size:20px;line-height:28px;font-weight:800;color:#fff42d;background:#2a0000}
+.event02 .event02_04Box p{width:100%;max-width:460px;height:auto;margin:0 auto}
+.event02 .event02_04Box p img{width:100%;height:auto}
+.event02 .event02_04Box .noticeBox{max-width:460px;margin:15px auto}
+
+.event02 .event02_04Box .btn_logout{display:block;width:33.3%;max-width:140px;height:30px;text-indent:-9999px;cursor:pointer;background-image:url("../../images/btn/btn_logoutTxt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 12px}
+
+/***** popup *****/
+.popup{position:relative;position:fixed;top:0;left:-9999px;width:100%;height:100%;background:rgba(0,0,0,0.7);overflow:hidden;-webkit-overflow-scrolling:touch;z-index:10}
+.popup .popCon{position:relative;position:absolute;top:50%;left:-9999px;background:#fff;transform:translate(-50%,-50%);box-shadow:0 0 20px rgba(0,0,0,0.4)}
+.popup .popCon iframe{display:block;border:none;margin:0;padding:0}
+.popup .btn_popClose{position:absolute;top:0;right:5px;width:34px;height:34px;background:#990f00;cursor:pointer;z-index:10}
+.popup .btn_popClose.on{background:#650000}
+.popup .btn_popClose img{width:18px;height:18px;margin:7px 0 0 7px}
+
+/* 유튜브 동영상 보기 팝업 */
+.pop01 iframe{width:540px;height:304px}
+.pop01 .btn_popClose{right:0}
+
+/* 이벤트 안내 팝업 */
+.pop02{width:85%;max-width:300px;padding-bottom:15px;font-size:12px;line-height:16px;color:#484c55}
+.pop02 h4{width:100%;height:34px;font-size:15px;line-height:34px;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop02 h5{padding:10px 15px 0;box-sizing:border-box;font-size:15px;line-height:18px;font-weight:800}
+.pop02 p:not(.btn_popClose){padding:5px 15px;box-sizing:border-box}
+.pop02 p:not(.btn_popClose) a{display:inline;color:#484c55}
+.pop02 dl{width:calc(100% - 30px);margin:0 auto;padding:10px;border:1px solid #d4d4d4;box-sizing:border-box}
+.pop02 dl dt{float:left;padding:0 0 0 8px;background:url("../../images/bullet_dot.png") 0 50% no-repeat}
+.pop02 dl dt:after{display:inline;content:":";padding:0 4px;font-size:12px;line-height:16px;}
+.pop02 dl dd{float:left;padding:0 0 0 5px;font-weight:800}
+.pop02 .bold{font-weight:800}
+
+/* 게임 소개 팝업 */
+.pop03{width:460px;background:none !important}
+.pop03:after{display:block;content:"";clear:both}
+.pop03 .tab{position:relative;height:70px;margin:0 auto;background:#212332}
+.pop03 .tab li{position:relative;height:70px;font-size:14px;line-height:18px;text-align:center;color:#fff;background:url("../../images/bg/bg_tabGradation.png") 100% 50% no-repeat;cursor:pointer}
+.pop03 .tab .slick-slide:nth-child(even){background-color:#212332}
+.pop03 .tab .slick-slide:nth-child(odd){background-color:#2a2e41}
+.pop03 .tab li.on{background-color:#12131c}
+.pop03 .tab li.now{background:#b90001}
+.pop03 .tab li span{position:absolute;left:0;top:50%;width:100%;text-align:center;transform:translateY(-50%)}
+.pop03 .tab .slick-list{height:70px}
+.pop03 .slick-arrow{position:absolute;width:20px;height:70px;text-indent:-9999px}
+.pop03 .slick-prev{left:-20px;bottom:0;background:url("../../images/btn/btn_listPrev.jpg") 50% #212332 no-repeat;background-size:100% auto}
+.pop03 .slick-next{right:-20px;bottom:0;background:url("../../images/btn/btn_listNext.jpg") 50% #212332 no-repeat;background-size:100% auto}
+.pop03 .sliderWrap{width:100%}
+.pop03 .btn_popClose{right:0px;}
+
+/* 미디어 클립 팝업 */
+.pop04{background:none !important;}
+.pop04 iframe{width:460px;height:265px}
+.pop04 .sliderWrap{}
+.pop04 .sliderWrap .slider .slick-dots{display:none}
+.pop04 .sliderWrap .slider .slick-arrow{display:none !important}
+.pop04 .sliderWrap .thumbnail{position:relative;background:url("../../images/mediaClip/mediaPopThumbBg.jpg") 0 0 space;background-size:auto 67px}
+.pop04 .sliderWrap .thumbnail .slick-track{margin:0}
+.pop04 .sliderWrap .thumbnail .slick-current{position:relative;overflow:hidden}
+.pop04 .sliderWrap .thumbnail .slick-current:before{position:absolute;top:0;left:0;display:block;width:108px;height:67px;content:"";border:3px solid #bd1503;box-sizing:border-box}
+.pop04 .slick-arrow{position:absolute;top:50%;width:40px;height:40px;margin-top:-20px;text-indent:-9999px;background-color:rgba(0,0,0,0.8);z-index:5}
+.pop04 .slick-prev{left:-20px;background-image:url("../../images/btn/btn_prev.png");background-size:auto 100%}
+.pop04 .slick-next{right:-20px;background-image:url("../../images/btn/btn_next.png");background-size:auto 100%}
+.pop04 .btn_popClose{right:0px}
+.pop04 .slick-dots{opacity:0}
+
+
+/* 휴대폰 로그인 팝업 */
+.pop05{width:82%;max-width:300px;text-align:center}
+.pop05 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop05 h5{padding:10px 15px 0;box-sizing:border-box;font-size:15px;line-height:18px;font-weight:800}
+.pop05 .formBox{width:calc(100% - 30px);margin:0 auto}
+.pop05 .formBox form .phoneBox{margin-top:20px}
+.pop05 .formBox form .phoneBox select{border:1px solid #b7b7b7}
+.pop05 .formBox form .phoneBox input[type="tel"]{border:1px solid #b7b7b7}
+.pop05 .formBox form .codeBox input[type="number"]{border:1px solid #b7b7b7}
+.pop05 .formBox form .agreeBox{display:inline-block}
+.pop05 .btn_login{display:block;width:100%;height:40px;margin:10px auto 0;text-indent:-9999px;cursor:pointer;background-position:50%;background-repeat:no-repeat;background-image:url("../../images/btn/btn_loginTxt.png");background-size:auto 16px}
+
+/* 이벤트 참여 팝업 */
+.pop06{width:74%;max-width:300px;text-align:center;padding-bottom:15px}
+.pop06 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop06 h5{padding:10px 5px 0;box-sizing:border-box;font-size:15px;line-height:18px;font-weight:800}
+.pop06 .code{width:calc(100% - 30px);margin:10px auto 0;font-size:14px;line-height:16px;font-weight:800;text-align:center;padding:10px 0;border:1px solid #d4d4d4;box-sizing:border-box}
+.pop06 ul{width:calc(100% - 30px);margin:10px auto}
+.pop06 ul li{font-size:12px;line-height:114x;font-weight:800;color:#484c55}
+.pop06 ul li span{font-weight:400}
+.pop06 .giftBox{width:calc(100% - 30px);margin:0 auto;padding:0 0 10px 0;font-size:12px;line-height:14px;text-align:center;background:#dee1e8}
+.pop06 .giftBox img{display:block;width:54%;height:auto;margin:0 auto}
+.pop06 .btn_popClose{position:static;width:calc(100% - 30px);height:40px;margin:10px auto 0;text-indent:-9999px;background-image:url("../../images/btn/btn_closeTxt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 16px}
+
+/* 구단명 저장 완료 팝업 */
+.pop07{width:74%;max-width:300px;text-align:center;padding-bottom:15px}
+.pop07 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop07 h5{padding:10px 5px 0;box-sizing:border-box;font-size:15px;line-height:18px;font-weight:800}
+.pop07 .code{width:calc(100% - 30px);margin:10px auto 0;font-size:14px;line-height:16px;font-weight:800;text-align:center;padding:10px 0;border:1px solid #d4d4d4;box-sizing:border-box}
+.pop07 ul{width:calc(100% - 30px);margin:10px auto}
+.pop07 ul li{font-size:12px;line-height:114x;font-weight:800;color:#484c55}
+.pop07 ul li span{font-weight:400}
+.pop07 .giftBox{width:calc(100% - 30px);margin:0 auto;padding:0 0 10px 0;font-size:12px;line-height:14px;text-align:center;background:#dee1e8}
+.pop07 .giftBox img{display:block;width:54%;height:auto;margin:0 auto}
+.pop07 .btn_popClose{position:static;width:calc(100% - 30px);height:40px;margin:10px auto 0;text-indent:-9999px;background-image:url("../../images/btn/btn_closeTxt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 16px}
+
+/* 출석부 확인 팝업 */
+.pop08{width:74%;max-width:300px;text-align:center;padding:15px;box-sizing:border-box}
+.pop08 img{width:100%;height:auto}
+.pop08 h4{width:32%;margin:0 auto 10px}
+.pop08 > p{width:43%;margin:0 auto}
+
+.pop08 .count{width:100%;;height:32px;border:1px solid #910009;box-sizing:border-box}
+.pop08 .count h5{float:left;width:60%;height:100%;background:#910009}
+.pop08 .count h5 img{width:auto;height:14px;margin:7px 0 0 0}
+.pop08 .count p{float:left;width:40%;height:100%;font-size:16px;line-height:30px;font-weight:800;color:#910009}
+
+.pop08 .calender{width:100%;margin:10px 0;background:#dee1e8}
+.pop08 .calender th{height:20px;border-width:0 0 2px 2px;border-style:solid;border-color:#fff;box-sizing:border-box;background:#acb2c0;font-size:12px;line-height:14px;font-weight:800;text-align:center;color:#fff}
+.pop08 .calender th:first-child{border-left:none}
+.pop08 .calender td{position:relative;height:40px;border-width:0 0 2px 2px;border-style:solid;border-color:#fff;box-sizing:border-box;text-align:center}
+.pop08 .calender td:first-child{border-left:none}
+.pop08 .calender td img{width:88%;height:auto}
+.pop08 .calender td .today{position:absolute;width:calc(100% - 2px);height:36px;left:0px;top:0px;border:1px solid #b90001;z-index:10}
+.pop08 ul{width:100%}
+.pop08 li{float:left;width:48%;height:40px;text-indent:-9999px;cursor:pointer;background-position:50%;background-repeat:no-repeat}
+.pop08 li:first-child{margin-right:4%}
+.pop08 .btn_check{background:url("../../images/btn/btn_checkTxt.png") 50% #989898 no-repeat;background-size:auto 14px}
+.pop08 .btn_check.red{background-color:#c20813}
+.pop08 .btn_popClose{position:static;width:48%;height:40px;background:url("../../images/btn/btn_closeTxt.png") 50% #323232 no-repeat;background-size:auto 14px}
+.pop08 .btn_popClose.on{background:url("../../images/btn/btn_closeTxt.png") 50% #010101 no-repeat;background-size:auto 14px}
+
+/* 사전 등록 완료 팝업 */
+.pop09{width:74%;max-width:300px;text-align:center;padding-bottom:15px}
+.pop09 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop09 h5{padding:10px 5px 0;box-sizing:border-box;font-size:15px;line-height:18px;font-weight:800}
+.pop09 p{width:calc(100% - 30px);margin:0 auto;font-size:12px;line-height:16px}
+.pop09 .giftBox{width:calc(100% - 30px);margin:10px auto 0;padding:12px 0 10px;background:#dee1e8}
+.pop09 .giftBox img{display:block;width:78%;height:auto;margin:0 auto 10px}
+.pop09 .btn_nickname{width:calc(100% - 30px);height:40px;margin:10px auto 0;text-indent:-9999px;background-image:url("../../images/btn/btn_nicknameTxt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 16px}
+
+/* 선수 카드 획득 팝업 */
+.pop10{width:74%;max-width:300px;text-align:center;padding-bottom:15px}
+.pop10 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop10 .img{width:calc(100% - 30px);margin:15px auto 0;padding:15px 0;box-sizing:border-box;background:#dee1e8;text-align:center}
+.pop10 .img img{display:block;width:28%;height:auto;margin:0 auto}
+.pop10 .img h5{font-size:14px;line-height:16px;margin:8px 0 0 0}
+.pop10 h6{padding:10px 0 5px;font-size:15px;line-height:18px;font-weight:800;color:#484c55}
+.pop10 p{font-size:14px;line-height:15px;margin-bottom:10px}
+.pop10 .btn_more{display:block;width:calc(100% - 30px);height:40px;margin:0 auto;text-indent:-9999px;cursor:pointer;background-position:50%;background-repeat:no-repeat;background-image:url("../../images/btn/btn_oneMoreTxt.png");background-size:auto 16px}
+
+/* 티켓 부족 팝업 */
+.pop11{width:60%;max-width:220px;text-align:center;padding-bottom:15px}
+.pop11 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop11 h5{padding:10px 0 0 0;box-sizing:border-box;font-size:15px;line-height:18px;font-weight:800}
+.pop11 p{width:calc(100% - 30px);margin:5px auto 20px;font-size:12px;line-height:16px}
+.pop11 .btn_popClose{position:static;width:calc(100% - 30px);height:40px;margin:10px auto 0;text-indent:-9999px;background-image:url("../../images/btn/btn_closeTxt.png");background-position:50%;background-repeat:no-repeat;background-size:auto 16px}
+
+
+/* 티켓 획득 팝업 */
+.pop12{width:70%;max-width:260px;text-align:center;padding-bottom:15px}
+.pop12 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop12 h5{padding:10px 0 5px;box-sizing:border-box;font-size:15px;line-height:18px;font-weight:800}
+.pop12 h6{font-size:14px;line-height:18px;color:#970f00}
+.pop12 p:not(.btn_popClose):not(.btn_draftLink){width:calc(100% - 30px);margin:5px auto 20px;font-size:12px;line-height:16px}
+.pop12 .btn_draftLink{display:block;width:calc(100% - 30px);height:40px;margin:20px auto 0;text-indent:-9999px;cursor:pointer;background-position:50%;background-repeat:no-repeat;background-image:url("../../images/btn/btn_draftLinkTxt.png");background-size:auto 16px}
+
+/* SNS 공유 팝업 */
+.pop13{width:40%;min-width:140px;max-width:170px;text-align:center;text-align:center}
+.pop13 h4{width:100%;height:34px;font-size:15px;line-height:34px;text-align:left;font-weight:800;text-indent:15px;color:#fff;background:#990f00}
+.pop13 ul{display:inline-block;padding:15px 0}
+.pop13 ul li{float:left;margin:0 10px;padding:38px 4px 0;font-size:12px;line-height:14px;font-weight:800;color:#484c55}
+.pop13 ul li a{display:block;width:100%;height:100%;color:#484c55}
+.pop13 ul .btn_copy{background:url("../../images/btn/btn_linkCopy.png") 50% 0 no-repeat;background-size:32px auto}
+.pop13 ul .btn_facebook{background:url("../../images/btn/btn_facebook.png") 50% 0 no-repeat;background-size:32px auto}
+
+
+/***** footer *****/
+footer{position:relative;width:100%;padding:15px 0;background:#000}  /* 16일 이후*/
+/* footer{position:absolute;bottom:0;left:0;width:100%;padding:15px 0;background:#000;z-index:10} /* 15일 */
+footer address{font-size:11px;line-height:15px;text-align:center;color:#fff}
+
+
+/***** common *****/
+/*** wrap ***/
+.wrap{position:relative;top:0;width:100%;overflow:hidden}
+.wrap.fix{position:fixed;-webkit-overflow-scrolling:touch}
+
+.section .period{width:50%;max-width:265px}
+
+.noticeBox{padding:15px;box-sizing:border-box}
+.noticeBox h4{width:auto;height:16px;text-align:left;margin-bottom:8px}
+.noticeBox h4 img{width:auto;height:100%}
+.noticeBox h5{width:auto;height:16px;text-align:left;margin-bottom:8px}
+.noticeBox h5 img{width:auto;height:100%}
+.noticeBox ul{display:block;width:100%;margin:0}
+.noticeBox ul li{margin:2px 0;font-size:12px;line-height:16px;text-align:left;word-break:break-all}
+.noticeBox ul li:before{display:block;float:left;content:"-";margin-right:5px}
+
+/* radio button */
+.radio{display:block;float:left}
+.radio:after{display:block;content:"";clear:both}
+.radio input[type="radio"]{display:none}
+.radio label{display:block;float:left;cursor:pointer}
+.radio input[type="radio"] + label span{display:block;float:left;width:16px;height:18px;margin:0 5px 0 0;vertical-align:middle;background:url("../../images/input/radio_off.png") 48% no-repeat;cursor:pointer;background-size:100% auto}
+.radio input[type="radio"]:checked + label span{background:url("../../images/input/radio_on.png") 48% no-repeat;background-size:100% auto}
+
+/* checkbox */
+.checkbox{display:block;float:left;margin-right:5px}
+.checkbox:after{display:block;content:"";clear:both}
+.checkbox input[type="checkbox"]{display:none}
+.checkbox label{display:block;float:left;cursor:pointer}
+.checkbox input[type="checkbox"] + label span{display:block;float:left;width:12px;height:18px;margin:0 3px 0 0;vertical-align:middle;background:url("../../images/input/check_off.jpg") 48% no-repeat;background-size:auto 12px;cursor:pointer}
+.checkbox input[type="checkbox"]:checked + label span{background:url("../../images/input/check_on.jpg") 48% no-repeat;background-size:auto 12px}
+
+/* input common */
+input::-webkit-input-placeholder{color:#3b475c}
+input::-moz-placeholder{color:#3b475c}
+input:-ms-input-placeholder{color:#3b475c}
+input:-moz-placeholder{color:#3b475c}
+
+/* select common */
+select{outline:none;-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;background:url("../../images/selectArr.png") calc(100% - 5px) 50% #fff no-repeat;background-size:8px auto;color:#3b475c;text-indent:10px}
+
+/* button */
+.btn_red{background-color:#b90001}
+.btn_big{display:block;width:74%;max-width:360px;height:40px;margin:0 auto;text-indent:-9999px;cursor:pointer;background-position:50%;background-repeat:no-repeat;background-size:auto 16px}
+
+/* slider */
+.sliderWrap{position:relative;width:460px}
+.sliderWrap article[class^="sliderCon"]{position:absolute;top:0;left:0;width:100%;z-index:-1}
+.sliderWrap article[class^="sliderCon"]:first-child{z-index:5}
+.sliderWrap article[class^="sliderCon"] img{width:100%;height:auto}
+.sliderWrap .slider{position:relative}
+.sliderWrap .slider .slick-arrow{position:absolute;top:50%;width:40px;height:40px;margin-top:-20px;text-indent:-9999px;background-color:rgba(0,0,0,0.8);z-index:5}
+.sliderWrap .slider .slick-prev{left:0;background-image:url("../../images/btn/btn_prev.png");background-size:auto 100%}
+.sliderWrap .slider .slick-next{right:0;background-image:url("../../images/btn/btn_next.png");background-size:auto 100%}
+.sliderWrap .slider .slick-dots{position:absolute;left:50%;bottom:15px;transform:translateX(-50%)}
+.sliderWrap .slider .slick-dots:after{display:block;content:"";clear:both}
+.sliderWrap .slider .slick-dots li{float:left;width:2px;height:2px;margin:0 5px;border-radius:20px;;background:#bdbdbd}
+.sliderWrap .slider .slick-dots li.slick-active{background:#c20813}
+.sliderWrap .slider .slick-dots li button{width:100%;height:100%;text-indent:-9999px}
+.sliderWrap .thumbnail{margin:10px 0 0 0}
+.sliderWrap .thumbnail .slick-slide{width:108px !important;height:67px;margin-left:9px;padding:0;background:url("../../images/mediaClip/mediaPopThumbBg.jpg") 50% no-repeat;background-size:cover}
+.sliderWrap .thumbnail .slick-slide:first-child{margin-left:0}
+.sliderWrap .thumbnail img{width:100%;height:67px}
+
+/* form */
+.formBox form .marketBox{margin:0 0 15px 0}
+.formBox form .marketBox .radio:first-child{margin-right:22px}
+.formBox form input[type="text"],.formBox form input[type="tel"],.formBox form input[type="number"]{float:left;display:block;height:30px;padding:0 10px;box-sizing:border-box;font-size:14px;line-height:28px;font-weight:800;color:#3b475c}
+.formBox form .marketBox label img{width:auto;height:18px}
+.formBox form .phoneBox{width:74%;min-width:250px;max-width:360px;margin:0 auto}
+.formBox form .phoneBox select{float:left;display:block;width:65px;height:30px;font-size:14px;line-height:28px;font-weight:800;text-indent:2 0px}
+.formBox form .phoneBox select option{font-weight:800}
+.formBox form .phoneBox input{float:right;width:calc(100% - 70px)}
+.formBox form .phoneBox input::placeholder{font-weight:500;color:#878787}
+.formBox form .phoneBox input::-webkit-input-placeholder{font-weight:500;color:#878787}
+.formBox form .phoneBox input:-ms-input-placeholder{font-weight:500;color:#878787}
+.formBox form .agreeBox{margin:10px 0}
+.formBox form .agreeBox .checkbox{font-size:10px;line-height:18px;color:#3b475c}
+.formBox form .agreeBox .btn_sign{width:58px;height:18px;font-size:10px;line-height:18px;font-weight:bold;text-align:center;background:#7c8290;color:#fff}
+.formBox form .agreeBox .btn_sign.on{background:#1e222c}
+.formBox form .codeBox{width:74%;min-width:250px;max-width:360px;margin:5px auto 0}
+.formBox form .codeBox input{width:55%;height:30px;padding:0 10px;font-size:14px;line-height:28px;text-indent:0;text-align:center}
+.formBox form .codeBox .btn_code{float:left;display:block;width:45%;height:30px;text-indent:-9999px;cursor:pointer;background:url("../../images/btn/btn_codeTxt.png") 50% #323232 no-repeat;background-size:auto 12px}
+.formBox form .codeBox .btn_code.on{background-color:#090909}
+
+/* ==================== 개발 작업 후 삭제 ==================== */
+.popOpenBtn{position:fixed;bottom:10px;right:10px;width:140px;background:#fff;cursor:pointer;box-shadow:0 5px 20px rgba(0,0,0,0.3);z-index:100}
+.popOpenBtn dt{padding:10px 5px;font-size:11px;line-height:15px;text-align:center;font-weight:bold;background:#c20813;color:#fff}
+.popOpenBtn dd{display:none;padding:10px 5px;font-size:11px;line-height:15px;border-bottom:1px solid #ddd}
+.popOpenBtn dd:hover{background:#ddd}
+/* ==================== 개발 작업 후 삭제 ==================== */
+
+
+
+
+/*** 모바일 ***/
+@media all and (max-width:580px){ 
+/***** header *****/
+header nav .btn_close{right:calc(72% + 10px)}
+
+/***** visual *****/
+.visual .btn_video{margin:50px auto}
+.visual h3 img{width:76px}
+.visual .storeLink li{height:44px}
+	
+/****** 이사만루3 사전 등록 *****/
+.registration .ball{bottom:-2%;left:-4%;width:80px}
+.registration .player{width:150px}
+
+/****** 스토어별 사전 등록 *****/
+.store p:not(.period){height:12px}
+.store .storeGift p{width:100%;height:auto}
+.store .storeGift p img{width:100%;height:auto}
+
+/***** 게임 소개 *****/
+.game section{width:62%;max-width:320px;margin-left:7.5%}
+.game section > article{width:calc(50% - 10px)}
+	
+/***** 구단명 선점 이벤트 *****/
+.event01 .before .formBox{padding:20px 0}
+
+/***** 접속 유도 이벤트 *****/
+.event02 .event02_02Box > div .right{width:calc(100% - 140px)}
+
+/* 유튜브 동영상 보기 팝업 */
+.pop01 iframe{width:360px;height:203px}
+
+/* 게임 소개 팝업 */
+.pop03{width:320px}
+.pop03 .tab{height:60px}
+.pop03 .tab li{height:60px;font-size:12px;line-height:16px}
+.pop03 .tab .slick-list{height:60px}
+.pop03 .slick-arrow{width:20px;height:60px}
+
+/* 미디어 클립 팝업 */
+.pop04{width:320px}
+.pop04 iframe{width:320px;height:185px}
+.pop04 .slick-arrow{width:20px;height:60px}
+.pop04 .sliderWrap .thumbnail{background-size:auto 47px}
+.pop04 .sliderWrap .thumbnail .slick-current:before{width:76px;height:47px;border-width:2px}
+.pop04 .slick-arrow{width:40px;height:40px;margin-top:-20px}
+.pop04 .slick-prev{left:-20px}
+.pop04 .slick-next{right:-20px}
+	
+/* slider */
+.sliderWrap{width:320px}
+.sliderWrap .thumbnail{height:47px}
+.sliderWrap .thumbnail .slick-slide{width:76px !important;height:47px;margin-left:5px}
+.sliderWrap .thumbnail img{width:100%;height:47px}
+}
+
+
+/*** 아이폰SE 이하 ***/
+@media all and (max-width:320px){ 
+.visual .btn_video{width:30%;margin:30px auto}
+	
+/****** 이사만루3 사전 등록 *****/
+.registration p{margin:0 auto 5px}
+.registration .period{margin:0 auto 15px}
+.registration article{width:90%}
+.registration .ball{bottom:-1%;left:-2%;width:70px}
+.registration .player{width:120px}
+
+
+/***** 구단명 선점 이벤트 *****/
+.event01 .after .gift{width:40%}
+	
+	
+
+/***** 접속 유도 이벤트 *****/
+.event02 .event02_02Box > div.clear{width:100%}
+.event02 .event02_01Box .after .btn_check{background-size:auto 14px}
+.event02 .event02_01Box .after .btn_attendanceCheck{background-size:auto 14px}
+.event02 .event02_01Box .after table th img{height:14px}
+.event02 .event02_03Box .point h5 img{height:14px;margin:9px 0 0 0}
+.event02 .event02_04Box .point h5 img{height:14px;margin:9px 0 0 0}
+	
+/***** common *****/
+/* button */
+.btn_big{width:70%;height:36px;background-size:auto 14px}
+
+/* form */
+.formBox form .marketBox{margin-bottom:10px}
+	
+/* 유튜브 동영상 보기 팝업 */
+.pop01 iframe{width:320px;height:180px}
+	
+/* 휴대폰 로그인 팝업 */
+.pop05{width:90%}
+.pop05 .formBox{width:calc(100% - 20px)}
+}
+
+
+/*** 휴대폰 가로모드 ***/
+@media (orientation: landscape){ 
+/***** header *****/
+header nav .navi{width:300px;overflow-y:scroll}
+header nav .navi .snsShare{margin-bottom:50px}
+header nav .btn_close{right:310px}
+	
+/***** visual *****/
+.visual h2{width:180px;margin:0 auto 5px}
+.visual p{width:290px}
+.visual .btn_video{width:60px;margin:15px auto 20px}
+.visual .step{width:240px}
+
+/***** game *****/
+.game section{width:90%;max-width:800px;margin:0 auto}
+.game section > article{width:calc(25% - 10px)}
+.game ul{width:90%;max-width:800px;margin:0 auto}
+.game ul li{width:calc(25% - 10px)}
+
+/***** popup *****/
+.popup .popCon .scrollArea{max-height:220px;overflow-y:scroll}
+.pop08 h4{margin-bottom:5px}
+.pop08 .calender td{height:30px}
+
+/* 게임 소개 팝업 */
+.pop03{width:420px;background:none !important}
+
+/* 미디어 클립 팝업 */
+.pop04{width:380px}
+.pop04 iframe{width:380px;height:214px}
+.pop04 .sliderWrap .thumbnail{}
+.pop04 .sliderWrap .thumbnail{background-size:auto 55px}
+.pop04 .sliderWrap .thumbnail .slick-current:before{width:89px;height:55px}
+
+/* slider */
+.sliderWrap{width:380px}
+.sliderWrap .thumbnail{height:55px;background-size:auto 55px}
+.sliderWrap .thumbnail .slick-slide{width:89px !important;height:55px;margin-left:8px}
+.sliderWrap .thumbnail img{width:100%;height:55px}
+}
+

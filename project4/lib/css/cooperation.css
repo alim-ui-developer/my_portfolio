@@ -1,0 +1,45 @@
+/* common */
+html{scroll-behavior:smooth;}
+.bg{display:block;width:100%;height:auto;}
+.bg img{width:100%;height:auto;}
+.btns img{width:100%;height:auto;}
+button img{width:100%;height:auto;}
+
+.evtWrap{display:none;}
+.evtWrap.on{display:block;}
+
+.popup{position:fixed}
+.popup .popCon{position:relative;top:50%;left:50%;width:40%;max-width:500px;transform:translate(-50%, -50%);}
+.popup .popCon.pop2_rule{width:64%;max-width:710px}
+.popup .popCon .btn_ok{position:absolute;left:30%;bottom:9%;width:40%;}
+.popup .popCon .btn_popClose{position:absolute;right:3%;top:4%;width:4%;}
+.popup .screen{position:absolute;background:rgb(23,38,58);background:linear-gradient(180deg, rgba(23,38,58,1) 50%, rgba(16,23,34,1) 100%);opacity:0.95;}
+
+.btn_top{position:fixed;bottom:3%;right:2%;width:5.4%;height:auto;}
+.btn_top img{width:100%;height:auto;}
+
+.titWrap{position:relative}
+.titWrap .btns{position:absolute;bottom:13.8%;left:5%;display:flex;justify-content:space-between;width:43.5%}
+.titWrap .btns li{width:48%}
+
+.evtWrap{position:relative;}
+.evtWrap .contents{position:absolute;top:0;left:0;width:100%;}
+.evtWrap .contents img{width:100%;height:auto}
+
+.groupWrap .contents .point{position:relative;}
+.groupWrap .contents .point span{position:absolute;left:51%;top:23.5%;display:block;width:14.7%;height:auto;font-size:2vw;line-height:100%;text-align:center;color:#fff}
+.groupWrap .contents .point span em{font-weight:800}
+
+.groupWrap .contents .gauge{position:relative;}
+.groupWrap .contents .gauge .bar{position:relative;position:absolute;left:9.7%;top:5.3%;display:block;height:22.7%;border-radius:100px;background:url("../../images/cooperation/bar.png") 0 0 no-repeat;background-size:auto 100%;overflow:hidden;}
+
+.groupWrap .contents .giftWrap{position:relative;}
+.groupWrap .contents .giftWrap .btns{position:absolute;top:11.2%;left:13%;width:73.75%;display:flex;justify-content:space-between;}
+.groupWrap .contents .giftWrap .btns li{position:relative;width:23.7%;}
+.groupWrap .contents .giftWrap .btns li button{position:absolute;bottom:3%;left:6%;width:88%;}
+
+.personalWrap .contents .giftWrap{position:relative;}
+.personalWrap .contents .giftWrap .count{position:absolute;top:18.5%;width:100%;font-size:1.65vw;line-height:100%;text-align:center;color:#fff;}
+.personalWrap .contents .giftWrap .btns{position:absolute;top:28%;left:4.2%;width:91.4%;display:flex;justify-content:space-between;}
+.personalWrap .contents .giftWrap .btns li{position:relative;width:16%;}
+.personalWrap .contents .giftWrap .btns li button{position:absolute;bottom:3%;left:6%;width:88%;}

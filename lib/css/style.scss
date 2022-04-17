@@ -1,0 +1,418 @@
+@mixin wrap{
+    position:relative;
+    width:90%;
+    max-width:1560px;
+    min-width:300px;
+    margin:0 auto;
+}
+
+@mixin fs10($lh12: 14px){
+    font-size:10px;
+    line-height:$lh12;
+}
+  
+@mixin fs12($lh12: 14px){
+    font-size:12px;
+    line-height:$lh12;
+}
+  
+@mixin fs14($lh14: 16px){
+    font-size:14px;
+    line-height:$lh14;
+}
+  
+@mixin fs16($lh16: 20px){
+    font-size:16px;
+    line-height:$lh16;
+}
+  
+@mixin fs20($lh20: 22px){
+    font-size:20px;
+    line-height:$lh20;
+}
+
+@mixin fs22($lh22: 24px){
+    font-size:22px;
+    line-height:$lh22;
+}
+
+@mixin fs24($lh24: 26px){
+    font-size:24px;
+    line-height:$lh24;
+}
+  
+@mixin fs26($lh26: 28px){
+    font-size:26px;
+    line-height:$lh26;
+}
+  
+@mixin fs28($lh28: 30px){
+    font-size:28px;
+    line-height:$lh28;
+}
+
+@mixin fs30($lh30: 32px){
+    font-size:30px;
+    line-height:$lh30;
+}
+  
+$grayTxt : #888;
+$whiteTxt : #fff;
+  
+/* header */
+header{
+    width:100%;
+    margin:0 0 30px 0;
+    padding:50px 0;
+    
+    div{
+        @include wrap;
+      
+        h1{
+            font-family:'Poppins';
+            font-size:50px;
+            line-height:50px;
+            font-weight:600;
+            text-transform:uppercase;
+        }
+        
+        p:not(.note){
+            margin:10px 0 0 0;
+        }
+        
+        .note{
+            @include fs12;
+            position:absolute;
+            bottom:0;
+            right:0;
+            color:$grayTxt;
+        }
+    }
+}
+  
+/* container */
+.container{
+    @include wrap;
+    
+    .listCon{
+        width:100%;
+        margin:50px 0 0 0;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+
+        &:first-child{
+            margin:0;
+        }
+
+        &:nth-child(odd){
+            flex-direction:row-reverse;
+
+            .txtBox{
+                text-align:left;
+                padding-left:100px;
+            }
+        }
+
+        &:nth-child(even){
+            flex-direction:row;
+
+            .txtBox{
+                text-align:right;
+                padding-right:100px;
+            }
+        }
+    }
+    
+    .txtBox{
+        width:50%;
+        box-sizing:border-box;
+      
+        .tit{
+            display:inline-block;
+        
+            h2{
+                float:left;
+                @include fs28;
+                font-weight:600;
+            }
+        
+            p{
+                @include fs14(40px);
+                float:left;
+                color:$grayTxt;
+
+                &:before{
+                    @include fs14(40px);
+                    display:block;
+                    float:left;
+                    content:"/";
+                    margin:0 5px;
+                    color:$grayTxt
+                }
+            }
+        }
+      
+        ul{
+            @include fs16(24px);
+            margin-top:-5px;
+            
+            li:last-child{
+                margin-top:25px;
+                line-height:20px;
+                color:$grayTxt;
+            }
+        }
+    }
+    
+    .imgBox{
+        position:relative;
+        width:50%;
+        background: linear-gradient(137deg, #ACB6E5, #eee, #FBD786, #eee);
+        background-size: 500% 500%;
+        -webkit-animation: gradient 20s ease infinite;
+        -moz-animation: gradient 20s ease infinite;
+        -o-animation: gradient 20s ease infinite;
+        animation: gradient 20s ease infinite;
+        @-webkit-keyframes gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        @-moz-keyframes gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        @-o-keyframes gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+        @keyframes gradient { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+      
+        img{
+            width:100%;
+            height:auto;
+            margin:0 auto;
+        }
+        
+        p{
+            position:absolute;
+            right:10px;
+            bottom:10px;
+        }
+        
+        ul{
+            position:absolute;
+            right:0;
+            bottom:0;
+
+            li{
+                float:left;
+                @include fs14(40px);
+                width:120px;
+                height:40px;
+                background:url("../../images/btnArr.png") calc(100% - 15px) 50% #000 no-repeat;
+                text-indent:15px;
+                color:$whiteTxt;
+                border-left:1px solid #333;
+                box-sizing:border-box;
+                
+                &.on{
+                    background-color:#555;
+                }
+
+                &:first-child{
+                    border:none
+                }
+
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    color:#fff;
+                }
+            }
+        }
+    }
+}
+
+/* footer */
+footer{
+    width:100%;
+    border-top:1px solid #ddd;
+    margin:100px 0 0 0;
+    padding:30px 0;
+    
+    address{
+      @include fs12;
+      text-align:center;
+      color:#888;
+    }
+}
+
+@media all and (max-width:1280px){
+/* container */
+.container{
+    @include wrap;
+    
+    .listCon{
+        &:nth-child(odd) .y_center{left:50px}
+        &:nth-child(even) .y_center{right:50px}
+    }
+    
+    .txtBox{
+        .tit{
+            h2{
+                @include fs26(30px);
+            }
+        }
+    
+        ul{
+            li:last-child{
+                margin-top:20px;
+                line-height:18px;
+            } 
+        }
+    }
+
+    .imgBox{
+        ul{
+            li{
+                width:100px;
+                height:38px;
+                @include fs12(38px);
+            }
+        }
+    }
+}
+}
+  
+@media all and (max-width:960px){
+    /* header */
+    header{
+        padding:40px 0;
+        
+        h1{
+            font-size:40px;
+            line-height:40px;
+        }
+        
+        p:not(.note){
+            @include fs12;
+        }
+    }
+        
+    /* container */
+    .container{
+        @include wrap;
+        
+        .txtBox{
+            .tit{
+                h2{
+                @include fs24(30px);
+                }
+            }
+        
+            ul{
+                @include fs14(20px);
+            
+                li:last-child{
+                    margin-top:10px;
+                } 
+            }
+        }
+        
+        .imgBox{
+            ul{
+                li{
+                    width:90px;
+                    height:32px;
+                    @include fs10(32px);
+                }
+            }
+        }
+    }
+}
+
+  
+@media all and (max-width:580px){
+/* header */
+header{
+    padding:50px 0 20px;
+    
+    div{
+        width:84%;
+    
+        h1{
+            @include fs30(30px);
+        }
+    
+        p:not(.note){
+            margin:5px 0 0 0;
+        }
+    
+        .note{
+            bottom:-35px
+        }
+    }
+}
+
+/* container */
+.container{
+    width:84%;
+    
+    .listCon{
+        margin:40px 0 0 0;
+    
+        .y_center{
+            position:static !important;
+            top:0;
+            transform:none
+        }
+    
+        &:nth-child(odd) .txtBox{float:none;width:100%}
+        &:nth-child(odd) .imgBox{float:none;width:100%}
+        &:nth-child(even) .txtBox{float:none;width:100%;text-align:left}
+        &:nth-child(even) .imgBox{float:none;width:100%}
+    }
+    
+    .txtBox{
+        height:auto !important;
+        border-top:1px solid #ddd;
+        margin-bottom:20px;
+        padding-top:30px;
+    
+        .tit{
+            .h2{
+            font-size:22px
+            }
+        }
+    }
+
+    .imgBox{
+        p{
+            @include fs12;
+        }
+    }
+}
+}
+  
+@media all and (max-width:480px){
+/* container */
+.container{
+    width:84%;
+    
+    .txtBox{
+        h2{
+            @include fs20;
+        }
+    
+        p{
+            @include fs12(30px);
+        
+            &:before{
+                @include fs12(30px);
+            }
+        }
+    
+        ul{
+            margin-top:0;
+            @include fs12(18px);
+        
+            li{
+                &:last-child{margin-top:15px;line-height:16px}
+            }
+        }
+    }
+}
+}
